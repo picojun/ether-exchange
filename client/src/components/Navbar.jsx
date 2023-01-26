@@ -17,7 +17,7 @@ const Navbar = () => {
     <nav className="w-full flex md:justify-center justify-between items-center p-4">
       <div className="md:flex-[0.5] flex-initial justify-center items-center">
         <img
-          src="../../public/vite.svg"
+          src="../../public/e2.png"
           alt="logo"
           className="w-12 cursor-pointer"
         />
@@ -50,7 +50,10 @@ const Navbar = () => {
             flex flex-col justify-start items-end rounded-md blue-glassmorphism text-white animate-slide-in"
           >
             <li className="text-xl w-full my-2">
-              <AiOutlineClose onClick={() => setToggleMenu(false)} />
+              <AiOutlineClose
+                onClick={() => setToggleMenu(false)}
+                classname="cursor-pointer"
+              />
             </li>
             {categories.map((item, index) => (
               <NavbarItem
